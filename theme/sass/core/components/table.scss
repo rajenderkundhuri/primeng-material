@@ -11,6 +11,8 @@
   &.ui-table {
     .ui-table-wrapper {
       .ui-table-thead {
+        background-color: var(--default);
+
         .ui-sortable-column {
           position: relative;
           padding: var(--spacer-sm) var(--spacer-xl) var(--spacer-sm) var(--spacer-sm);
@@ -47,7 +49,6 @@
           > th {
             text-align: start;
             padding: var(--spacer-sm);
-            height: calc(#{$button-height} + 2 * var(--spacer-sm));
             @include row-border();
           }
 
@@ -68,7 +69,6 @@
             color: $default-text-color;
 
             padding: var(--spacer-sm);
-            height: calc(#{$button-height} + 2 * var(--spacer-sm));
             @include row-border();
           }
 
@@ -120,7 +120,6 @@
         > tr {
           > td {
             padding: var(--spacer-sm);
-            height: calc(#{$button-height} + 2 * var(--spacer-sm));
             @include row-border();
           }
 
